@@ -6,7 +6,6 @@
   max-width: 450px;
   background: #fafafa;
   padding: 30px;
-  /*margin: 0p auto; */
   box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
   border: 6px solid #305a72;
@@ -26,8 +25,6 @@
 
 .form-style-box ul li .field-style {
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   padding: 8px;
   outline: none;
   border: 1px solid #b0cfe0;
@@ -55,8 +52,6 @@
 }
 
 .form-style-box ul li button[type="submit"] {
-  -moz-box-shadow: inset 0px 1px 0px 0px #3985b1;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #3985b1;
   box-shadow: inset 0px 1px 0px 0px #3985b1;
   background-color: #216288;
   border: 1px solid #17445e;
