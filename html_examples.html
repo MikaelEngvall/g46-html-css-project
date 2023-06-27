@@ -6,56 +6,74 @@
     <title>HTML Examples</title>
   </head>
   <style type="text/css">
-    .form-style-box{
-        max-width: 450px;
-        background: #FAFAFA;
-        padding: 30px;
-        margin: 50px auto;
-        box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
-        border-radius: 10px;
-        border: 6px solid #305A72;
+    .form-style-box {
+      max-width: 450px;
+      background: #fafafa;
+      padding: 30px;
+      margin: 50px auto;
+      box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+      border-radius: 10px;
+      border: 6px solid #305a72;
     }
-    .form-style-box ul{
-        padding:0;
-        margin:0;
-        list-style:none;
+    .form-style-box ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
     }
-    .form-style-box ul  .field-style:focus{
-        box-shadow: 0 0 5px #B0CFE0;
-        border:1px solid #B0CFE0;
+    .form-style-box ul li {
+      display: block;
+      margin-bottom: 10px;
+      min-height: 35px;
     }
-    .form-style-box ul .field-split{
-        width: 49%;
+    .form-style-box ul li .field-style {
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      padding: 8px;
+      outline: none;
+      border: 1px solid #b0cfe0;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
     }
-    .form-style-box ul .field-full{
-        width: 100%;
+    .form-style-box ul li .field-style:focus {
+      box-shadow: 0 0 5px #b0cfe0;
+      border: 1px solid #b0cfe0;
     }
-    .form-style-box ul input.align-left{
-        float:left;
+    .form-style-box ul li .field-split {
+      width: 49%;
     }
-    .form-style-box ul input.align-right{
-        float:right;
+    .form-style-box ul li .field-full {
+      width: 100%;
     }
-    .form-style-box ul textarea{
-        width: 100%;
-        height: 100px;
-    } 
-    .form-style-box ul button[type="submit"] {
-        -moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
-        -webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
-        box-shadow: inset 0px 1px 0px 0px #3985B1;
-        background-color: #216288;
-        border: 1px solid #17445E;
-        display: inline-block;
-        cursor: pointer;
-        color: #FFFFFF;
-        padding: 8px 18px;
-        text-decoration: none;
-        font: 12px Arial, Helvetica, sans-serif;
+    .form-style-box ul li input.align-left {
+      float: left;
     }
-    .form-style-box ul button[type="submit"]:hover {
-        background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
-        background-color: #28739E;
+    .form-style-box ul li input.align-right {
+      float: right;
+    }
+    .form-style-box ul li textarea {
+      width: 100%;
+      height: 100px;
+    }
+    .form-style-box ul li textarea {
+      width: 100%;
+      height: 100px;
+    }
+    .form-style-box ul li button[type="submit"] {
+      background-color: #216288;
+      border: 1px solid #17445e;
+      display: inline-block;
+      cursor: pointer;
+      color: #fdfcfc;
+      padding: 8px 18px;
+      text-decoration: none;
+      font: 12px Arial, Helvetica, sans-serif;
+    }
+    .form-style-box ul li button[type="submit"]:hover {
+      background: linear-gradient(to bottom, #2d77a2 5%, #337da8 100%);
+      background-color: #28739e;
     }
   </style>
   <body>
@@ -67,51 +85,55 @@
       <h3>Registration Form</h3>
       <p>Please fill in this form to create an account</p>
       <ul>
-      <label></label>
-      <input
-        type="text"
-        placeholder="First Name*"
-        id="fn"
-        name="firstName"
-        required
-      />
+        <li>
+          <input
+            type="text"
+            placeholder="First Name*"
+            id="fn"
+            name="firstName"
+            required
+          />
+        </li>
 
-      <label></label>
-      <input
-        type="text"
-        placeholder="Last Name*"
-        id="ln"
-        name="lastName"
-        required
-      />
+        <li>
+          <input
+            type="text"
+            placeholder="Last Name*"
+            id="ln"
+            name="lastName"
+            required
+          />
+        </li>
 
-      <label></label>
-      <input
-        type="text"
-        placeholder="E-mail*"
-        id="email"
-        name="email"
-        required
-      />
+        <li>
+          <input
+            type="text"
+            placeholder="E-mail*"
+            id="email"
+            name="email"
+            required
+          />
+        </li>
+        <li>
+          <label>Course:</label>
+          <select id="course" name="course">
+            <option value="1">Java</option>
+            <option value="2">C#</option>
+            <option value="3">Python</option>
+          </select>
+        </li>
 
-      <label>Course:</label>
-      <select id="course" name="course">
-        <option value="1">Java</option>
-        <option value="2">C#</option>
-        <option value="3">Python</option>
-      </select>
-
-      <label>Description</label>
-      <textarea
-        id="desc"
-        name="desc"
-        placeholder="Tell us about your experiences..."
-      >
-      </textarea>
-
-      <hr />
-
-      <button type="submit">Register</button>
+        <li>
+          <textarea
+          id="desc"
+          name="desc"
+          placeholder="Tell us about your experiences..."
+        ></textarea> 
+        </li>
+       <li>
+        <button type="submit">Register</button>
+       </li>
+        
       </ul>
     </form>
 
