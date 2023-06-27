@@ -122,9 +122,3 @@
   background: linear-gradient(to bottom, #2d77a2 5%, #337da8 100%);
   background-color: #28739e;
 }
-.styled-table th td tr .field-style {
-  box-sizing: border-box;
-  padding: 8px;
-  outline: none;
-  border: 1px solid #b0cfe0;
-}
