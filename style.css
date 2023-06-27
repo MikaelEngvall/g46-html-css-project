@@ -4,7 +4,7 @@
       max-width: 450px;
       background: #fafafa;
       padding: 30px;
-      margin: 0p auto;  /*why does 0p put the box to the left */
+      /*margin: 0p auto; */ 
       box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
       border-radius: 10px;
       border: 6px solid #305a72;
