@@ -1,6 +1,8 @@
 /* styllesheet for the file html_examples.html */
 
-/* CSS for the form */
+/* ******************** */
+/* CSS for the form box */
+/* ******************** */
 
 .styled-box {
   max-width: 450px;
@@ -67,8 +69,10 @@
   background: linear-gradient(to bottom, #2d77a2 5%, #337da8 100%);
   background-color: #28739e;
 }
-
+/* ***************** */
 /* CSS for the table */
+/* ***************** */
+
 .styled-table {
   max-width: 450px;
   background: #fafafa;
