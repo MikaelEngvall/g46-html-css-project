@@ -1,2 +1,2 @@
 Just trying out som CSS on course code
-# g46-html-css-project-1
+# g46-html-css-project
